@@ -1,0 +1,116 @@
+
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+ 
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Center the app on the page */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ensure the app takes up the full height of the viewport */
+  background-color: #545b62;
+}
+
+/* Container styles */
+.container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #e6f2ff; /* Sky-like cloud color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styles */
+@media (max-width: 767px) {
+  /* Styles for small screens (mobile devices) */
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .container_city,
+  .container_degree,
+  .country_per {
+    font-size: 1.2rem;
+  }
+
+  .container_img {
+    width: 120px;
+  }
+
+  .form {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+  .input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Styles for larger screens (tablets, desktops) */
+  .container {
+    width: 90%;
+    max-width: 600px;
+  }
+
+  .form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .input {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+}
+
+/* Blue button */
+.form button {
+  background-color: #007bff;
+  color: white;
+}
+
+.form button:hover {
+  background-color: #0056b3;
+}
+
+/* Red button */
+.form button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.form button:hover {
+  background-color: #c82333;
+}
+
+/* Gray button */
+.form button {
+  background-color: #3333;
+  color: white;
+}
+
+.form button:hover {
+  background-color: #545b62;
+}
